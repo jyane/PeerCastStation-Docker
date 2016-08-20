@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<array>
+  <object type="PeerCastStation.UI.PortMapperSettings">
+    <property name="Enabled">
+      <boolean>true</boolean>
+    </property>
+  </object>
+  <object type="PeerCastStation.PeerCastStationSettings">
+    <property name="BroadcastID">
+      <guid>001a79c4-1e92-40f1-a55c-0ffcbf4d6f03</guid>
+    </property>
+    <property name="Logger">
+      <object type="PeerCastStation.PeerCastStationSettings+LoggerSettings">
+        <property name="Level">
+          <enum type="PeerCastStation.Core.LogLevel">Warn</enum>
+        </property>
+        <property name="OutputTarget">
+          <enum type="PeerCastStation.Core.LoggerOutputTarget">Debug, Console, UserInterface</enum>
+        </property>
+        <property name="LogFileName">
+          <null />
+        </property>
+      </object>
+    </property>
+    <property name="Listeners">
+      <array>
+        <object type="PeerCastStation.PeerCastStationSettings+ListenerSettings">
+          <property name="EndPoint">
+            <ipendpoint>
+              <ipaddress>0.0.0.0</ipaddress>
+              <port>7144</port>
+            </ipendpoint>
+          </property>
+          <property name="LocalAccepts">
+            <enum type="PeerCastStation.Core.OutputStreamType">All</enum>
+          </property>
+          <property name="LocalAuthRequired">
+            <boolean>false</boolean>
+          </property>
+          <property name="GlobalAccepts">
+            <enum type="PeerCastStation.Core.OutputStreamType">Play, Relay, Metadata, Interface</enum>
+          </property>
+          <property name="GlobalAuthRequired">
+            <boolean>true</boolean>
+          </property>
+          <property name="AuthId">
+            <string>r_dFxME.*v40ZK31</string>
+          </property>
+          <property name="AuthPassword">
+            <string>A+LRDUu',,+lIe5(</string>
+          </property>
+        </object>
+      </array>
+    </property>
+    <property name="AccessController">
+      <object type="PeerCastStation.PeerCastStationSettings+AccessControllerSettings">
+        <property name="MaxRelays">
+          <integer>0</integer>
+        </property>
+        <property name="MaxDirects">
+          <integer>0</integer>
+        </property>
+        <property name="MaxRelaysPerChannel">
+          <integer>0</integer>
+        </property>
+        <property name="MaxDirectsPerChannel">
+          <integer>0</integer>
+        </property>
+        <property name="MaxUpstreamRate">
+          <integer>0</integer>
+        </property>
+        <property name="MaxUpstreamRatePerChannel">
+          <integer>0</integer>
+        </property>
+      </object>
+    </property>
+    <property name="YellowPages">
+      <array>
+        <object type="PeerCastStation.PeerCastStationSettings+YellowPageSettings">
+          <property name="Protocol">
+            <string>pcp</string>
+          </property>
+          <property name="Name">
+            <string>TP</string>
+          </property>
+          <property name="Uri">
+            <null />
+          </property>
+          <property name="ChannelsUri">
+            <uri>http://temp.orz.hm/yp/index.txt</uri>
+          </property>
+        </object>
+        <object type="PeerCastStation.PeerCastStationSettings+YellowPageSettings">
+          <property name="Protocol">
+            <string>pcp</string>
+          </property>
+          <property name="Name">
+            <string>SP</string>
+          </property>
+          <property name="Uri">
+            <null />
+          </property>
+          <property name="ChannelsUri">
+            <uri>http://bayonet.ddo.jp/sp/index.txt</uri>
+          </property>
+        </object>
+      </array>
+    </property>
+  </object>
+  <object type="PeerCastStation.ChannelCleanerSettings">
+    <property name="InactiveLimit">
+      <integer>1800000</integer>
+    </property>
+    <property name="Mode">
+      <enum type="PeerCastStation.ChannelCleaner+CleanupMode">Disconnected</enum>
+    </property>
+  </object>
+  <object type="PeerCastStation.UI.UISettings">
+    <property name="BroadcastHistory">
+      <array />
+    </property>
+    <property name="UserConfig">
+      <dictionary />
+    </property>
+  </object>
+</array>

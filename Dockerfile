@@ -20,6 +20,9 @@ RUN unzip PeerCastStation-2.2.0.zip
 
 ADD ./entrypoint.sh /entrypoint.sh
 
+RUN mkdir -p /root/.config/PeerCastStation
+ADD ./PecaSettings.xml /root/.config/PeerCastStation/PecaSettings.xml
+
 EXPOSE 7144
 CMD ["/entrypoint.sh"]
 

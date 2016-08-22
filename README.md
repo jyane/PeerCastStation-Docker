@@ -14,3 +14,4 @@ docker run -it -p 7144:7144 jyane/pecastation
 ## TODO
 
 - [ ] 設定を外部から注入できるようにする
+- [ ] TP、SP 以外の YP を入れる

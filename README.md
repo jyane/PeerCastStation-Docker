@@ -16,8 +16,3 @@ or
 ``` sh
 docker run -it -p 7144:7144 -v ${pwd}:/root/.config/PeerCastStation pecastation:latest mono /usr/local/src/PeerCastStation-2.6.2/PeerCastStation.exe
 ```
-
-## TODO
-
-- [ ] 設定を外部から注入できるようにする
-- [ ] TP、SP 以外の YP を入れる
